@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<!-- divinectorweb.com -->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<title>CSS Cards with Overlay Hover Animation/title></title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+	<style>
+
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; 
+    box-sizing: border-box;
+}
+body{
+	background: transparent;
+    color: #fff;
+}
+.wrapper{
+    padding: 10px 10%;
+}
+#card-area{
+    padding: 50px 0;
+}
+.box-area{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.box {
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    height: fit-content;
+}
+.box img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.overlay {
+	width: 100%;
+	height: 0;
+	background: linear-gradient(transparent,#1c1c1c 58%);
+	border-radius: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	font-size: 14px;
+	transition: height 0.5s;
+}
+.overlay h3 {
+	font-weight: 500;
+	margin-bottom: 5px;
+	margin-top: 80%;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 30px;
+	letter-spacing: 2px;
+}
+.overlay a {
+	margin-top: 10px;
+	color: #262626;
+	text-decoration: none;
+	font-size: 14px;
+	background: #fff;
+	border-radius: 50px;
+	text-align: center;
+	padding: 5px 15px;
+}
+.box:hover img{
+    transform: scale(1.1);
+}
+.box:hover .overlay{
+    height: 100%;
+}
+
+
+
+    </style>
+</head>
+<body>
+	<div id="card-area">
+		<div class="wrapper">
+			<div class="box-area">
+				<div class="box">
+					<img alt="" src="lop10gpt.png">
+					<div class="overlay">
+						<h3>TÀI LIỆU 10</h3>
+						<p>Kho tài liệu lớp 10 được biên soạn nhằm giúp học sinh nắm chắc kiến thức nền tảng, hiểu đúng bản chất từng môn học và rèn luyện tư duy học tập ngay từ đầu cấp THPT. Nội dung bám sát chương trình sách giáo khoa.</p><a href="https://drive.google.com/drive/folders/1vpgeWtw50KP8iC5FqTXu3sj9_M-gk4pR" target="_blank">Book Now</a>
+					</div>
+				</div>
+				<div class="box">
+					<img alt="" src="lop11gpt.png">
+					<div class="overlay">
+						<h3>TÀI LIỆU 11</h3>
+						<p>Tài liệu lớp 11 được xây dựng nhằm củng cố kiến thức trọng tâm, tăng dần mức độ vận dụng và chuẩn bị nền tảng cho kỳ thi cuối cấp. Nội dung bám sát chương trình sách giáo khoa, trình bày rõ ràng, dễ tự học.</p><a href="https://drive.google.com/drive/folders/13xJNCSzP4-7MGwXaYcWb9P_X9U1G9a-D" target="_blank">Book Now</a>
+					</div>
+				</div>
+				<div class="box">
+					<img alt="" src="lop12gpt.png">
+					<div class="overlay">
+						<h3>TÀI LIỆU 12</h3>
+						<p>Tài liệu lớp 12 tập trung hệ thống hóa kiến thức trọng tâm, rèn kỹ năng làm bài và ôn luyện hiệu quả cho kỳ thi tốt nghiệp THPT. Nội dung bám sát chương trình, phân loại theo chuyên đề và mức độ.</p><a href="https://drive.google.com/drive/folders/1ugnhHTjw5h2ECpMj3niX6pRAY-tRTim5" target="_blank">Book Now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
